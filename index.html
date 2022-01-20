@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div style="display: flex; gap: 30px; width: 70%; margin-bottom: 20px;">
+      <button class="menuButtons" id="mainMenu">Main Menu</button>
+      <button class="menuButtons" id="restartGame">Restart Game</button>
+    </div>
+    <div id="game" style="margin-bottom: 20px;">
+        <div id="board">
+            <table id="gameGrid">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table> 
+        </div>
+    </div>
+    <div id="gameStatus"></div>
+    
+    <div id="gameMenu">
+      <div id="title">Tic Tac Toe</div>
+      
+      <div id="gameMode">
+        <button id="onePlayerMode" class="menuButtons">1 Player</button>
+        <button id="twoPlayersMode" class="menuButtons">2 Players</button>
+      </div>
+      
+      <div id='onePlayerSettings'>
+        <form onsubmit="return false">
+          <div style="display: flex; gap: 30px; align-items: center;">
+            <label for="playerName">Name; </label>
+            <input type="text" id="playerName" name="playerName">
+          </div>
+          
+          <div style="display: flex; gap: 30px; align-items: center;">
+            <div>Symbol;</div>
+            <button id="xSymbol">&thinsp;X</button>
+            <button id="oSymbol">&thinsp;O</button>
+          </div>
+          
+          <div style="display: flex; gap: 30px; align-items: center;">
+            <div>Color;</div>
+            <button id="blueColor"></button>
+            <button id="orangeColor"></button>
+          </div>
+          
+          <button id="submitOnePlayer" class="menuButtons">Enter</button>
+        </form>
+      </div>
+      
+      <div id="difficulty">
+        <button id="superEasy" class="menuButtons">Super Easy</button>
+        <button id="impossible" class="menuButtons">Impossible</button>
+      </div>
+
+      <div id='twoPlayersSetting' style="display: none; gap: 100px; width: 80%; flex-wrap: wrap; justify-content: space-between;">
+        <div id="playerOne">
+          <form onsubmit="return false">
+            <div style="display: flex; gap: 30px; align-items: center;">
+              <label for="playerName1">P1 Name; </label>
+              <input type="text" id="playerName1" name="playerName1">
+            </div>
+            
+            <div style="display: flex; gap: 30px; align-items: center;">
+              <div>P1 Symbol;</div>
+              <button id="xSymbolP1">&thinsp;X</button>
+              <button id="oSymbolP1">&thinsp;O</button>
+            </div>
+            
+            <div style="display: flex; gap: 30px; align-items: center;">
+              <div>P1 Color;</div>
+              <button id="blueColorP1"></button>
+              <button id="orangeColorP1"></button>
+            </div>
+          </form>
+        </div>
+        <div id="playerTwo">
+          <form onsubmit="return false">
+            <div style="display: flex; gap: 30px; align-items: center;">
+              <label for="playerName2">P2 Name; </label>
+              <input type="text" id="playerName2" name="playerName2">
+            </div>
+            
+            <div style="display: flex; gap: 30px; align-items: center;">
+              <div>P2 Symbol;</div>
+              <button id="xSymbolP2">&thinsp;X</button>
+              <button id="oSymbolP2">&thinsp;O</button>
+            </div>
+            
+            <div style="display: flex; gap: 30px; align-items: center;">
+              <div>P2 Color;</div>
+              <button id="blueColorP2"></button>
+              <button id="orangeColorP2"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <button id="submitTwoPlayers" class="menuButtons" style="width:80%; display: none; justify-content: center;">Enter</button>
+    </div>
+</body>
+</html>

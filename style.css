@@ -1,0 +1,179 @@
+@font-face {
+    font-family: flynn;
+    src: url(fonts/FlynnHollow-0r5d.ttf);
+}
+
+body {
+    font-family: flynn;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    text-shadow: 0 0 10px #fff;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menuButtons {
+    background-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    border-radius: 10px;
+    color: powderblue;
+    text-shadow:  0 0 10px powderblue;
+    border-color: powderblue;
+    box-shadow:  0 0 5px powderblue;
+    width: 100%;
+}
+
+.menuButtons:hover {
+    color: orange;
+    text-shadow:  0 0 10px orange;
+    border-color: orange;
+    box-shadow:  0 0 5px orange;
+    scale: 1.02;
+    cursor: pointer;
+}
+
+#xSymbol, #oSymbol, #xSymbolP1, #oSymbolP1, #xSymbolP2, #oSymbolP2 {
+    background-color: rgba(0,0,0,0.5);
+    border: solid black;
+    color: white;
+    text-shadow:  0 0 10px white;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+}
+
+#blueColor, #orangeColor, #blueColorP1, #orangeColorP1, #blueColorP2, #orangeColorP2 {
+    width: 60px;
+    height: 60px;
+    border: solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#blueColor, #blueColorP1, #blueColorP2 {
+    background-color: powderblue;
+}
+
+#orangeColor, #orangeColorP1, #orangeColorP2 {
+    background-color: orange;
+}
+
+.buttonSelect {
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+}
+
+#gameMenu {
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#gameMode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+}
+
+#onePlayerSettings {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+}
+
+#twoPlayersSettings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#onePlayerSettings input {
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 5px white;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 5px;
+    padding-bottom: 8px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+
+#twoPlayersSetting input {
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 5px white;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 5px;
+    padding-bottom: 8px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+
+#difficulty {
+    display: none;
+    flex-direction: column;
+    width: 95%;
+    gap: 20px;
+}
+
+#title {
+    font-size: 70px;
+    color: powderblue;
+    text-shadow: 0 0 10px powderblue;
+}
+
+table {
+    font-size: 80px;
+    text-align: center;
+}
+
+tr, td {
+    border: 3px solid rgb(255, 253, 253);
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    padding-left: 11px;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
